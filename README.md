@@ -1,6 +1,4 @@
-<a name="readme-top"></a>
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
+#aidangu.github.io
 
 <br />
 <div align="center">
