@@ -1,10 +1,4 @@
 #aidangu.github.io
 
-<br />
-<div align="center">
-  <a href="github.com/AidanGu/aidangu.github.io">
-    <img src="images.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Aidan Gu</h3>
-
+Just my project portfolio
+ᵔᴥᵔ

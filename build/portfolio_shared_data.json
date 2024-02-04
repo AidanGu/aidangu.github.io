@@ -1,0 +1,59 @@
+{
+  "basic_info": {
+    "name": "Aidan Gu",
+    "titles": [ "Freshmen at UCSC", "18 Years Old", "Computer Science Major", "Fencer and Musician" ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/AidanGu",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/aidan._.gu/",
+        "class": "fab fa-instagram"
+      }
+    ],
+    "image": "myProfile.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "HTML",
+        "class": "fab fa-html5"
+      },
+      {
+        "name": "React",
+        "class": "fab fa-react"
+      },
+      {
+        "name": "Java",
+        "class": "fab fa-java"
+      },
+      {
+        "name": "Python",
+        "class": "fab fa-python"
+      },
+      {
+        "name": "JavaScript",
+        "class": "fab fa-js"
+      },
+      {
+        "name": "CSS",
+        "class": "fab fa-css3-alt"
+      },
+      {
+        "name": "Node.js",
+        "class": "fab fa-node-js"
+      },
+      {
+        "name": "C++",
+        "class": "fab fa-cuttlefish"
+      },
+      {
+        "name": "C#",
+        "class": "fab fa-windows"
+      }
+    ]
+  }
+}
