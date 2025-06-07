@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aidan Gu - Creative Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">AG</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#story" class="nav-link">My Story</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="images/profile.png" alt="Aidan Gu" class="profile-image">
+                <div class="image-glow"></div>
+            </div>
+            
+            <div class="hero-text">
+                <h1 class="hero-name">
+                    <span class="name-part">Aidan</span>
+                    <span class="name-part">Gu</span>
+                </h1>
+                
+                <div class="hero-title">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                
+                <p class="hero-description">
+                    Computer Engineering student at UC Santa Cruz, passionate about building technology 
+                    that brings people together. From Cambridge classrooms to Santa Cruz maker spaces, 
+                    I create solutions that foster community and drive positive change.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#story" class="cta-button primary">
+                        <span>Discover My Journey</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="projects.html" class="cta-button secondary">
+                        <span>View My Work</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <!-- Stats will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-content" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Building Community Through Code</h2>
+                    <p>
+                        I'm a Computer Engineering student at UC Santa Cruz with a passion for creating 
+                        technology that brings people together. My journey spans from working as a Maker Space 
+                        Intern through the CUIP program to conducting research at the Tech4Good Lab.
+                    </p>
+                    <p>
+                        Beyond coding, I'm deeply involved in community building and creative technology. 
+                        As an Adobe Student Brand Ambassador, I help others learn creative tools and techniques
+                        that empower their projects and ideas.
+                    </p>
+                    <p>
+                        When I'm not working on projects or planning events, you'll find me playing music, 
+                        exploring new technologies, or helping others build confidence in tech.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="images/makerspace.png" alt="Aidan Gu in the Maker Space" class="about-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roles Section -->
+    <section class="roles-section">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="roles-grid">
+                <!-- Roles will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Timeline -->
+    <section class="story-timeline" id="story">
+        <div class="container">
+            <div class="story-hero-content">
+                <h2 class="story-title">My Journey</h2>
+                <p class="story-subtitle">From curiosity to creation — the path that shaped who I am today</p>
+                <div class="story-intro">
+                    <p>Every line of code, every project, and every challenge has been part of a larger story. This is how I discovered my passion for Computer Engineering and the experiences that continue to drive my work.</p>
+                </div>
+            </div>
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                <!-- Timeline items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Reflection -->
+    <section class="story-reflection">
+        <div class="container">
+            <div class="reflection-content">
+                <!-- Reflection content will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Interests</h2>
+            <div class="skills-grid">
+                <!-- Skills will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Load content data and scripts -->
+    <script src="data/content.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/darkmode.js"></script>
+</body>
+</html>
