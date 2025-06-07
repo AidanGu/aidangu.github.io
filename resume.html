@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Aidan Gu</title>
+    <meta name="description" content="Professional experience and education of Aidan Gu, Computer Engineering student and researcher.">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/critical.css" as="style">
+    <link rel="preload" href="js/core.js" as="script">
+    
+    <!-- Critical CSS inline for fastest render -->
+    <link rel="stylesheet" href="css/critical.css">
+    
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link rel="preload" href="css/components.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/animations.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Fonts with display swap for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container" id="mainNav">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">AG</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="resume.html" class="nav-link active">Resume</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Resume Hero -->
+    <section class="enhanced-page-hero resume-hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="enhanced-hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Professional Experience</span>
+                </div>
+                <h1 class="enhanced-page-title">
+                    <span class="title-main">Resume</span>
+                    <span class="title-accent">& Experience</span>
+                </h1>
+                <p class="enhanced-page-subtitle">
+                    A journey through Computer Engineering, research, and community building — 
+                    from Cambridge classrooms to Santa Cruz maker spaces.
+                </p>
+                <div class="hero-actions">
+                    <a href="assets/aidan_gu_resume.pdf" class="download-btn" download>
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                    <a href="mailto:ahgu@ucsc.edu" class="download-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Banner -->
+    <section class="quote-banner">
+        <div class="container">
+            <div class="quote-content">
+                <i class="quote-icon fas fa-rocket"></i>
+                <blockquote>"I don't just build projects. I build momentum. 🔧🚀"</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Content -->
+    <section class="resume-section">
+        <div class="container">
+            <div class="resume-grid reveal-on-scroll">
+                <!-- Timeline -->
+                <div class="timeline-section">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="timeline">
+                        <article class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">June 2025 – June 2026</div>
+                                <h3>Slugworks Staff</h3>
+                                <h4>UC Santa Cruz</h4>
+                                <p>
+                                    Leading maker education initiatives and training platform development. 
+                                    Mentoring new interns and supporting the growth of UCSC's maker community 
+                                    through innovative educational approaches.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Leadership</span>
+                                    <span class="tag">Training Development</span>
+                                    <span class="tag">Mentorship</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2025 – 2026</div>
+                                <h3>ACM Instruction Officer</h3>
+                                <h4>Association for Computing Machinery, UC Santa Cruz</h4>
+                                <p>
+                                    Coordinating educational workshops and technical training sessions as Instruction Coordinator. 
+                                    Helping students bridge the gap between academic learning and practical application 
+                                    through hands-on programming workshops and peer learning initiatives.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Technical Education</span>
+                                    <span class="tag">Workshop Coordination</span>
+                                    <span class="tag">Peer Learning</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">June 2024 – June 2025</div>
+                                <h3>Maker Space Intern</h3>
+                                <h4>Slugworks CUIP, UC Santa Cruz</h4>
+                                <p>
+                                    Managed and developed the maker space's online presence using HTML, Adobe Illustrator, and Figma.
+                                    Conducted interviews and wrote spotlights on users, promoting experiential learning.
+                                    Analyzed data on maker space usage to improve outreach and space utilization.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Web Development</span>
+                                    <span class="tag">Data Analysis</span>
+                                    <span class="tag">Community Building</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2025 – Present</div>
+                                <h3>Generative AI Researcher</h3>
+                                <h4>Tech4Good Lab, UC Santa Cruz</h4>
+                                <p>
+                                    Designing AI tools for transcript analysis, prompt workflows, and LLM evaluation to support 
+                                    feedback in experiential learning. Applying insights from Slugworks interviews to improve 
+                                    reflection systems for CMPM courses and campus-wide maker programs.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">AI Research</span>
+                                    <span class="tag">Educational Technology</span>
+                                    <span class="tag">Data Analysis</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2025 – Present</div>
+                                <h3>Student Brand Ambassador</h3>
+                                <h4>Adobe</h4>
+                                <p>
+                                    Planning and leading workshops teaching students how to use Adobe Express and other Adobe 
+                                    applications for academic and creative projects. Promoting creative tools and techniques 
+                                    to enhance student work across disciplines.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">Workshop Facilitation</span>
+                                    <span class="tag">Creative Tools</span>
+                                    <span class="tag">Community Engagement</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2023</div>
+                                <h3>Study Abroad Student</h3>
+                                <h4>University of Cambridge (UCEAP)</h4>
+                                <p>
+                                    Studied Robotics, Macroeconomics, and Material Science at Cambridge University 
+                                    through the UC Education Abroad Program. Gained international perspective 
+                                    and expanded technical knowledge in a challenging academic environment.
+                                </p>
+                                <div class="timeline-tags">
+                                    <span class="tag">International Experience</span>
+                                    <span class="tag">Academic Excellence</span>
+                                    <span class="tag">Cultural Exchange</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Skills & Education -->
+                <div class="resume-sidebar">
+                    <!-- Education -->
+                    <div class="resume-card">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Science</h4>
+                            <p>Computer Engineering</p>
+                            <p>University of California, Santa Cruz</p>
+                            <span class="date">2023 - 2027</span>
+                        </div>
+                        <div class="education-item">
+                            <h4>Study Abroad</h4>
+                            <p>Robotics, Macroeconomics, Material Science</p>
+                            <p>University of Cambridge</p>
+                            <span class="date">Summer 2023</span>
+                        </div>
+                    </div>
+
+                    <!-- Publications -->
+                    <div class="resume-card">
+                        <h3>Publications</h3>
+                        <div class="publication-item">
+                            <h4>Connection Through Canvas</h4>
+                            <p>ISAM 2025</p>
+                            <p class="publication-authors">Co-authored with Tamara Ball, Nicolas Kouatli, and Kristy Golubiewski-Davis</p>
+                            <p class="publication-description">Research exploring transformation of UCSC's Canvas LMS into a centralized training platform for makerspaces.</p>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills -->
+                    <div class="resume-card">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-group">
+                                <h4>Languages</h4>
+                                <p>Python, C, Java, HTML/CSS, TypeScript, JavaScript</p>
+                            </div>
+                            <div class="skill-group">
+                                <h4>Tools & Software</h4>
+                                <p>React, Figma, Excel, Adobe Creative Suite (Illustrator, Photoshop, Premiere Pro, Express)</p>
+                            </div>
+                            <div class="skill-group">
+                                <h4>Specialties</h4>
+                                <p>Data Analysis, AI/ML, Community Building, Educational Technology, UX Design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div class="resume-card">
+                        <h3>Achievements</h3>
+                        <ul class="achievements-list">
+                            <li>ISAM 2025 Publication Co-Author</li>
+                            <li>Chancellor's Undergraduate Internship Program (CUIP) Participant</li>
+                            <li>Adobe Student Brand Ambassador</li>
+                            <li>Cambridge Study Abroad Scholar (UCEAP)</li>
+                            <li>ACM Instruction Officer</li>
+                        </ul>
+                    </div>
+
+                    <!-- Interests -->
+                    <div class="resume-card">
+                        <h3>Interests</h3>
+                        <div class="interests-tags">
+                            <span class="interest-tag">AI Research</span>
+                            <span class="interest-tag">Maker Education</span>
+                            <span class="interest-tag">Community Building</span>
+                            <span class="interest-tag">Music Performance</span>
+                            <span class="interest-tag">Data Visualization</span>
+                            <span class="interest-tag">Educational Technology</span>
+                            <span class="interest-tag">Creative Technology</span>
+                            <span class="interest-tag">International Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">AG</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:ahgu@ucsc.edu" class="social-icon-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/aidangu" class="social-icon-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/aidangu" class="social-icon-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <p>Made with <span class="heart">💻</span> & <span class="coffee">☕</span> in Santa Cruz</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core JavaScript -->
+    <script src="js/core.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

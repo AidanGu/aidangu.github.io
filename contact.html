@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Aidan Gu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Page Transition -->
+    <div id="pageTransition" class="page-transition"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html" class="page-link">AG</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link page-link">Home</a>
+                <a href="projects.html" class="nav-link page-link">Projects</a>
+                <a href="resume.html" class="nav-link page-link">Resume</a>
+                <a href="contact.html" class="nav-link page-link active">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="enhanced-page-hero contact-hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="enhanced-hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-envelope"></i>
+                    <span>Let's Connect</span>
+                </div>
+                <h1 class="enhanced-page-title">
+                    <span class="title-main">Get In</span>
+                    <span class="title-accent">Touch</span>
+                </h1>
+                <p class="enhanced-page-subtitle">
+                    Ready to collaborate on something amazing? Whether you have a project idea, 
+                    want to chat about tech, or just say hello — I'd love to hear from you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspirational Quote Banner -->
+    <section class="quote-banner">
+        <div class="container">
+            <div class="quote-content">
+                <i class="quote-icon fas fa-rocket"></i>
+                <blockquote>"I don't just build projects. I build momentum. 🔧🚀"</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid scroll-reveal">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Let's Connect</h2>
+                    <p>
+                        I'm always excited to connect with fellow developers, potential collaborators, 
+                        and anyone interested in technology, hackathons, or creative projects. 
+                        Whether you have a project idea, want to chat about tech, or just say hello, 
+                        I'd love to hear from you!
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:ahgu@ucsc.edu" class="contact-method hover-effect">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>ahgu@ucsc.edu</p>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/aidangu" class="contact-method hover-effect">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p>linkedin.com/in/aidangu</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:8579710128" class="contact-method hover-effect">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>(857) 971-0128</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/aidangu" class="contact-method hover-effect">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <p>github.com/aidangu</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="availability">
+                        <h3>Current Status</h3>
+                        <div class="status-indicator">
+                            <div class="status-dot available"></div>
+                            <span>Available for new opportunities</span>
+                        </div>
+                        <p>
+                            I'm currently open to internship opportunities, research collaborations, 
+                            and interesting project partnerships for Summer 2025.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/ahgu@ucsc.edu" method="POST">
+                        <h2>Send a Message</h2>
+                        
+                        <!-- Success and Error Messages -->
+                        <div id="formSuccess" class="form-message success-message">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Got it! I'll get back to you soon ✉️</p>
+                        </div>
+                        
+                        <div id="formError" class="form-message error-message">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>Oops! Something went wrong. Please try again.</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="opportunity">Job/Internship Opportunity</option>
+                                <option value="research">Research Partnership</option>
+                                <option value="mentorship">Mentorship</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, opportunity, or just say hello!"></textarea>
+                        </div>
+                        
+                        <!-- Honeypot field for spam protection -->
+                        <div class="honeypot-field">
+                            <input type="text" name="_gotcha" style="display:none">
+                        </div>
+
+                        <button type="submit" class="submit-btn ripple-effect">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="page-link">AG</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:ahgu@ucsc.edu" class="social-icon-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/aidangu" class="social-icon-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/aidangu" class="social-icon-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <p>Made with <span class="heart">💻</span> & <span class="coffee">☕</span> in Santa Cruz</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/page-transitions.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/cursor-effects.js"></script>
+</body>
+</html>

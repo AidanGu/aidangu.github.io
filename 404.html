@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Aidan Gu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-content {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+            z-index: 2;
+        }
+
+        .error-number {
+            font-size: clamp(8rem, 15vw, 12rem);
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            animation: glitch 2s infinite;
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .error-quote {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .error-emoji {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        .home-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: var(--accent-gradient);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .home-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Glitch effect */
+        @keyframes glitch {
+            0%, 100% { transform: translate(0); }
+            10% { transform: translate(-2px, -2px); }
+            20% { transform: translate(2px, 2px); }
+            30% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, -2px); }
+            50% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            70% { transform: translate(-2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            90% { transform: translate(-2px, -2px); }
+        }
+
+        /* Background orbs for consistency */
+        .error-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.2;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .error-orb-1 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            top: 20%;
+            left: 10%;
+        }
+
+        .error-orb-2 {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(45deg, #8b5cf6, #ec4899);
+            bottom: 20%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-orb error-orb-1"></div>
+        <div class="error-orb error-orb-2"></div>
+        
+        <div class="error-content">
+            <div class="error-emoji">🤖</div>
+            <div class="error-number">404</div>
+            <h1 class="error-message">Page Not Found</h1>
+            <p class="error-quote">
+                "Do you know why my name starts with AI? Me neither…"
+            </p>
+            <a href="index.html" class="home-button">
+                <i class="fas fa-home"></i>
+                <span>Return to Home</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/darkmode.js"></script>
+</body>
+</html>
